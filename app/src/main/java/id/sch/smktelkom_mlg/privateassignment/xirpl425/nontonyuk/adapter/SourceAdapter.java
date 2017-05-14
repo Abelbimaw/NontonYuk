@@ -41,8 +41,9 @@ public class SourceAdapter extends RecyclerView.Adapter<SourceAdapter.ViewHolder
         Result result = list.get(position);
         holder.tvName.setText(result.title);
         holder.tvDesc.setText(result.overview);
+        holder.tvVote.setText(result.vote_average);
         Glide.with(context)
-                .load("http://image.tmdb.org/t/p/w500" + result.poster_path)
+                .load("http://image.tmdb.org/t/p/w500" + result.backdrop_path)
                 .into(holder.ivPoster);
     }
 
@@ -61,12 +62,14 @@ public class SourceAdapter extends RecyclerView.Adapter<SourceAdapter.ViewHolder
         ImageView ivPoster;
         TextView tvName;
         TextView tvDesc;
+        TextView tvVote;
 
         public ViewHolder(View itemView) {
             super(itemView);
             ivPoster = (ImageView) itemView.findViewById(R.id.imageViewPoster);
             tvName = (TextView) itemView.findViewById(R.id.textViewName);
             tvDesc = (TextView) itemView.findViewById(R.id.textViewDesc);
+            tvVote = (TextView) itemView.findViewById(R.id.textViewVote);
         }
     }
 }

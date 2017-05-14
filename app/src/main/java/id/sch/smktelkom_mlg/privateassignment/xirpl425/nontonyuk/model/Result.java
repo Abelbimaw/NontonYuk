@@ -14,5 +14,5 @@ public class Result {
     public Double popularity;
     public Double vote_account;
     public Boolean video;
-    public Double vote_average;
+    public String vote_average;
 }
