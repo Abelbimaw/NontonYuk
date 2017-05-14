@@ -153,14 +153,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return new PopulerFragment();
             else if (position == 1)
                 return new NowPlayingFragment();
+            else if (position == 2)
+                return new UpcomingFragment();
+            else if (position == 3)
+                return new FavoritFragment();
             else
-            return PlaceholderFragment.newInstance(position + 1);
+                return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
@@ -171,7 +175,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 case 1:
                     return "NOW PLAYING";
                 case 2:
-                    return "SECTION 3";
+                    return "UPCOMING";
+                case 3:
+                    return "FAVORIT";
+
             }
             return null;
         }
