@@ -17,7 +17,7 @@
 ## Deskripsi singkat dari aplikasi minimal 200 karakter :
 #### Aplikasi ini merupakan aplikasi yang menggunakan API untuk menampilkan data. Aplikasi ini menggunakan API TMDb untuk mengambil data film. Aplikasi ini dapat menampilkan gambar, judul, dan vote rate. Pada Aplikasi ini kita dapat melihat film yang sedang populer, film yang sedang tayang, film yang memiliki rate tertinggi, dan film yang akan tayang.
 ## Kelebihan dari Aplikasi : 
-#### Warna aplikasi yang menarik, design simple, mudah digunakan dan menampilkan berbagai jenis film (Popular, Upcoming, Now Playing, Top Rated)
+#### Design simple, mudah digunakan dan menampilkan berbagai jenis film (Popular, Upcoming, Now Playing, Top Rated)
 ## Screenshot dari Aplikasi :
 Top Rated | Now Playing
 ------------ | -------------
